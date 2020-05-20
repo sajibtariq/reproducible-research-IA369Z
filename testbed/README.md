@@ -66,7 +66,9 @@ Move to directory /reproducible-research-IA369Z/testbed/ and run the ```bash tes
 $ sudo python3 test_1.py
 ```
  ```bash test_1.py``` script contains all the network utilization information as follows for network emulation and internally called ```bash test3_1.py``` main script to run the topology and generate the data
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+
+Technology    | No of traces | Mode                              | No of hos competing at a same time | Adaptive algorithm
+------------- | ------------ | --------------------------------- | ---------------------------------- | ------------------
+3G            | 15           |bus, metro, train ,ferry ,car      |    1                               | Conventional
+4G            | 30           |static, car, bus, train, pedestrian|    1                               | Conventional
+5G            | 9            |static , driving                   |    1                               | Conventional
