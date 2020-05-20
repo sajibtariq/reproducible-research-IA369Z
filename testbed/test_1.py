@@ -5,7 +5,7 @@ import subprocess
 mode=['3g','4g','5g'] #network type '5g',
 
 host=[1] # number of host
-algo=['average'] # adaptation algorithm 'conv'
+algo=['conventional'] # adaptation algorithm 'conv'
 
 net3= ['metro','bus', 'train', 'ferry','car'] # mobility for 3g
 net4=['bus', 'train', 'static','car','pedestrian'] # mobility for 4g
