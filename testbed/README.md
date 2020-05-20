@@ -33,7 +33,7 @@ After installation move caddy file from  /usr/local/bin/ directory to /reproduci
 ```bash
 $ sudo mv  /usr/local/bin/caddy ../reproducible-research-IA369Z/testbed/caddy/
 ```
-To download movie content inside caddy directory use ```bash dash_movie_content.sh script. ``` It might take longer. Please be patient!!!
+To download movie content inside caddy directory use ```dash_movie_content.sh script. ``` It might take longer. Please be patient!!!
 ```bash
 $ cd caddy && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
 ```
@@ -60,15 +60,21 @@ Go to ../reproducible-research-IA369Z/testbed/goDash/DashApp/src/ directory, ope
 ```
 ## Run Network Topology
 
-Move to directory /reproducible-research-IA369Z/testbed/ and run the ```bash test_1.py``` script
+Move to directory /reproducible-research-IA369Z/testbed/ and run the ```test_1.py``` script
 
 ```bash
 $ sudo python3 test_1.py
 ```
- ```bash test_1.py``` script contains all the network utilization information as follows for network emulation and internally called ```bash test3_1.py``` main script to run the topology and generate the data
+ ```test_1.py``` script contains all the network utilization information as follows for network emulation and internally called ``` test3_1.py``` main script to run the topology and generate raw data from network interface and log file from godash player.
 
 Technology    | No of traces | Mode                              | No of hos competing at a same time | Adaptive algorithm
 ------------- | ------------ | --------------------------------- | ---------------------------------- | ------------------
 3G            | 15           |bus, metro, train ,ferry ,car      |    1                               | Conventional
 4G            | 30           |static, car, bus, train, pedestrian|    1                               | Conventional
 5G            | 9            |static , driving                   |    1                               | Conventional
+
+The overall network emulation arhtecture that ``` test3_1.py``` script contains given below. 
+![alt text](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/figures/network%20scenario-Page-2.jpg?raw=true)
+
+**After completing the all network emulation and data generateraion experiment. Move back to the 
+/reproducible-research-IA369Z directory follow the instruction stated in README.md file for raw data preprocess and generate CSV file obtained during the experiment. Next, move towards to Machine learning activity, first follow the instruction stated in README.md as well**
