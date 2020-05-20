@@ -17,7 +17,7 @@ Ubuntu 18.04 Operating Syatem
 
 
 ## Installation
-It might take longer. Please be patient!!!. It might also ask to put  yes/ y /accept etc during the installation. No worries whatever it ask just follow the instaruction.  
+It might take longer. Please be patient!!!. It might also ask to put  yes/y/accept etc during the installation. No worries whatever it ask just follow the instaruction.  
 ```bash
 step 1: $ git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
 
@@ -29,17 +29,18 @@ step 2: $ sudo chmood 777 build.sh
 
 step 4: $ ./build.sh
 ```
-After installation move caddy file from  /usr/local/bin/ directory to /reproducible-research-IA369Z/testbed/caddy/  directory
+After installation move ```caddy``` file from  ```/usr/local/bin/``` directory to ```/reproducible-research-IA369Z/testbed/caddy/```  directory
 ```bash
 $ sudo mv  /usr/local/bin/caddy ../reproducible-research-IA369Z/testbed/caddy/
 ```
-To download movie content inside caddy directory use ```dash_movie_content.sh script. ``` It might take longer. Please be patient!!!
+To download movie content inside ```/reproducible-research-IA369Z/testbed/caddy/```  directory use ```dash_movie_content.sh script.``` It might take longer. Please be patient!!!
+
 ```bash
-$ cd caddy && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
+$ cd /testbed/caddy && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
 ```
 **Although goDASH player support several adaptive algorithms, for this class project we will use only conventional adaptive algorithm**
 
-Go to ../reproducible-research-IA369Z/testbed/goDash/DashApp/src/ directory, open the config file and modify the file as follows-
+Move to ```../reproducible-research-IA369Z/testbed/goDash/DashApp/src/``` directory, open the ```config``` file and modify the file as follows-
 ```bash
 {
         "adapt" : "conventional",
@@ -60,7 +61,7 @@ Go to ../reproducible-research-IA369Z/testbed/goDash/DashApp/src/ directory, ope
 ```
 ## Run Network Topology
 
-Move to directory /reproducible-research-IA369Z/testbed/ and run the ```test_1.py``` script
+Move to directory ```/reproducible-research-IA369Z/testbed/``` and run the ```test_1.py``` script
 
 ```bash
 $ sudo python3 test_1.py
@@ -74,7 +75,8 @@ Technology    | No of traces | Mode                              | No of hos com
 5G            | 9            |static , driving                   |    1                               | Conventional
 
 The overall network emulation arhtecture that ``` test3_1.py``` script contains given below. 
+
 ![alt text](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/figures/network%20scenario-Page-2.jpg?raw=true)
 
-**After completing the all network emulation and data generateraion experiment. Move back to the 
-/reproducible-research-IA369Z directory follow the instruction stated in README.md file for raw data preprocess and generate CSV file obtained during the experiment. Next, move towards to Machine learning activity, first follow the instruction stated in README.md as well**
+**After completing all network emulation and data generateraion experiment. Move back to the 
+```/reproducible-research-IA369Z``` directory follow the instruction stated in README.md file for raw data preprocess obtained during the experiment and generate CSV file. Next, before move towards Machine learning activity, follow the instruction stated in README.md as well**
