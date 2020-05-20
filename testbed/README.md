@@ -37,6 +37,25 @@ To download movie content inside caddy directory use ```bash dash_movie_content.
 ```bash
 $ cd caddy && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
 ```
+Go to ../reproducible-research-IA369Z/testbed/goDash/DashApp/src/ directory, open the config file and modify the file as follows
+```bash
+{
+        "adapt" : "conventional",
+        "codec" : "h264",
+        "debug" : "on",
+        "initBuffer" : 2,
+        "maxBuffer" : 60,
+        "maxHeight" : 1080,
+        "streamDuration" : 600,
+        "logFile" : "log_file_2",
+        "getHeaders" : "off",
+        "terminalPrint" : "on",
+        "printHeader" : "{\"Algorithm\":\"on\",\"Seg_Dur\":\"on\",\"Codec\":\"off\",\"Width\":\"on\",\"Height\":\"on\",\"FPS\":\"off\",\"Play_Pos\":\"on\",\"RTT\":\"on\",\"Seg_Repl\":\"off\",\"Protocol\":\"off\",\"P.1203\":\"on\",\"Clae\":\"off\",\"Duanmu\":\"off\",\"Yin\":\"off\",\"Yu\":\"off\"}",
+        "useTestbed" : "off",
+        "url" : "[http://10.0.0.150:2015/html/x264/bbb/DASH_Files/live/bbb_enc_x264_dash.mpd]",
+        "QoE" : "on"
+}
+```
 
 
 
