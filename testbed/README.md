@@ -37,7 +37,9 @@ To download movie content inside caddy directory use ```bash dash_movie_content.
 ```bash
 $ cd caddy && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
 ```
-Go to ../reproducible-research-IA369Z/testbed/goDash/DashApp/src/ directory, open the config file and modify the file as follows
+**Although goDASH player support several adaptive algorithms, for this class project we will use only conventional adaptive algorithm**
+
+Go to ../reproducible-research-IA369Z/testbed/goDash/DashApp/src/ directory, open the config file and modify the file as follows-
 ```bash
 {
         "adapt" : "conventional",
