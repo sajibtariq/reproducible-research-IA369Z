@@ -2,7 +2,7 @@
 
 ## Requirements
 
-```bash
+
 
 Ubuntu 18.04 Operating Syatem
 
@@ -14,10 +14,10 @@ Ubuntu 18.04 Operating Syatem
 
 [Tcpdump](https://www.tcpdump.org/)
 
-```
+
 
 ## Installation
-
+```bash
 step 1: $ git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
 
 step 2: $ cd reproducible-research-IA369Z
@@ -27,6 +27,7 @@ step 3: $ cd testbed
 step 2: $ sudo chmood 777 build.sh
 
 step 4: $ ./build.sh
+```
 
 step 5: $ sudo mv  /usr/local/bin/caddy ../reproducible-research-IA369Z/testbed/caddy
 
