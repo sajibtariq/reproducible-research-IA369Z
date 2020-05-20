@@ -17,7 +17,7 @@ Ubuntu 18.04 Operating Syatem
 
 
 ## Installation
-It might take longer.Be patient!!!. May be asked to put  yes/ y /accept etc during the installation. No worries whatever it ask just follow the instaruction.  
+It might take longer. Please be patient!!!. It might also ask to put  yes/ y /accept etc during the installation. No worries whatever it ask just follow the instaruction.  
 ```bash
 step 1: $ git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
 
@@ -29,13 +29,13 @@ step 2: $ sudo chmood 777 build.sh
 
 step 4: $ ./build.sh
 ```
-After installation move caddy file from  /usr/local/bin/ directory to /reproducible-research-IA369Z/testbed/caddy/directory
+After installation move caddy file from  /usr/local/bin/ directory to /reproducible-research-IA369Z/testbed/caddy/  directory
 ```bash
 $ sudo mv  /usr/local/bin/caddy ../reproducible-research-IA369Z/testbed/caddy/
 ```
-To download movie content inside caddy directory use dash_movie_content.sh script. It might take longer.Be patient!!!
+To download movie content inside caddy directory use ```bash dash_movie_content.sh script. ``` It might take longer. Please be patient!!!
 ```bash
-Step 7: cd caddy && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
+$ cd caddy && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
 ```
 
 
