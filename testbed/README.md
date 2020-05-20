@@ -58,7 +58,15 @@ Go to ../reproducible-research-IA369Z/testbed/goDash/DashApp/src/ directory, ope
         "QoE" : "on"
 }
 ```
+## Run Network Topology
 
+Move to directory /reproducible-research-IA369Z/testbed/ and run the ```bash test_1.py``` script
 
-
-
+```bash
+$ sudo python3 test_1.py
+```
+ ```bash test_1.py``` script contains all the network utilization information as follows for network emulation and internally called ```bash test3_1.py``` main script to run the topology and generate the data
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
