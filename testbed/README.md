@@ -40,7 +40,7 @@ $ cd ~/reproducible-research-IA369Z/testbed/caddy/ && sudo chmod 777 dash_movie_
 ```
 **Although goDASH player support several adaptive algorithms, for this class project we will use only conventional adaptive algorithm**
 
-Move to ```../reproducible-research-IA369Z/testbed/goDash/DashApp/src/``` directory, open the ```config``` file and modify the file as follows-
+Move to ```~/reproducible-research-IA369Z/testbed/goDash/DashApp/src/``` directory, open the ```config``` file and modify the file as follows-
 ```bash
 {
         "adapt" : "conventional",
