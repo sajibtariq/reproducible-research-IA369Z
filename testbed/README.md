@@ -25,18 +25,18 @@ step 2: $ cd reproducible-research-IA369Z
 
 step 3: $ cd testbed
 
-step 2: $ sudo chmood 777 build.sh
+step 2: $ sudo chmod 777 build.sh
 
 step 4: $ ./build.sh
 ```
 After installation move ```caddy``` file from  ```/usr/local/bin/``` directory to ```/reproducible-research-IA369Z/testbed/caddy/```  directory
 ```bash
-$ sudo mv  /usr/local/bin/caddy ../reproducible-research-IA369Z/testbed/caddy/
+$ sudo mv  /usr/local/bin/caddy ~/reproducible-research-IA369Z/testbed/caddy/
 ```
 To download movie content inside ```/reproducible-research-IA369Z/testbed/caddy/```  directory use ```dash_movie_content.sh script.``` It might take longer. Please be patient!!!
 
 ```bash
-$ cd /testbed/caddy && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
+$ cd ~/reproducible-research-IA369Z/testbed/caddy/ && sudo chmod 777 dash_movie_content.sh && ./dash_movie_content.sh
 ```
 **Although goDASH player support several adaptive algorithms, for this class project we will use only conventional adaptive algorithm**
 
