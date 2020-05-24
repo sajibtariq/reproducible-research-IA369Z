@@ -8,12 +8,10 @@ Data Aquisition
 
 [Testbed](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
 
-Data Pre-processing & Data Analysis
-
-[Scappy](https://scapy.readthedocs.io/en/latest/installation.html)
+Data Pre-processing, Data Analysis & Executable Paper
 
 [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
-
+[Scappy](https://anaconda.org/conda-forge/scapy)
 [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
 
