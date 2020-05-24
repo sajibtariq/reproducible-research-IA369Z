@@ -11,7 +11,9 @@ Data Aquisition
 Data Pre-processing, Data Analysis & Executable Paper
 
 [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+
 [Scappy](https://anaconda.org/conda-forge/scapy)
+
 [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
 
