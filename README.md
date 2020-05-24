@@ -11,6 +11,13 @@ Data Aquisition
 Data Pre-processing, Data Analysis & Executable Paper
 
 [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+```bash
+- Numpy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+```
 
 [Scappy](https://anaconda.org/conda-forge/scapy)
 
