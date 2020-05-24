@@ -11,7 +11,7 @@ Data Aquisition
 Data Pre-processing & Data Analysis
 
 [Scappy](https://scapy.readthedocs.io/en/latest/installation.html)
-[ Jupyter Notebook followed by Anaconda]
+[Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
 
 
 ## Workflow
