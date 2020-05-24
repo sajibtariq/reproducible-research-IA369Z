@@ -6,9 +6,7 @@ Network operators expected to run on with fast-growing multimedia video streamin
 ## Requirements
 Data Aquisition
 
-```bash
-[Testbed](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
-```
+```[Testbed](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)```
 Data Pre-processing & Data Analysis
 ```bash
 [Scappy](https://scapy.readthedocs.io/en/latest/installation.html)
