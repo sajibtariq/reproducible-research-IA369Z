@@ -14,6 +14,8 @@ Data Pre-processing & Data Analysis
 
 [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
 
+[Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
+
 
 ## Workflow
 ![alt text](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/figures/Project%20workflow.jpg?raw=true)
