@@ -53,7 +53,30 @@ Data Generation
 ```
 Step 1: Open terminal and execute the following comamand
 
+$ cd ~/reproducible-research-IA369Z/testbed/
+
 $ sudo python3 test_1.py
+
+```bash
+Data Preprocess raw data to export csv
+```
+Step 1: Open jupyter notebook and open the execute-draft.ipynbfile from ~/reproducible-research-IA369Z/deliver/ directory
+Step 2:  Run the cell that contains  " %run ./Raw-data-preprocess-&-csv-export.ipynb" this line 
+
+
+```bash
+Data Preprocess split training and testing CSV from exported csv
+```
+Step 1: Open jupyter notebook and open the execute-draft.ipynbfile from ~/reproducible-research-IA369Z/deliver/ directory
+Step 2:  Run the cell that contains  " %run ~/reproducible-research-IA369Z/dev/preprocess.ipynb " this line 
+
+
+```bash
+Data Analysis
+```
+Step 1: Open jupyter notebook and open the execute-draft.ipynbfile from ~/reproducible-research-IA369Z/deliver/ directory
+Step 2:  Run the cell that contains  " %run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb " this line
+Step 3:  Run the cell that contains  " %run ~/reproducible-research-IA369Z/dev/rfc.ipynb " this line
 
 ## Distrubution
 ```bash
