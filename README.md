@@ -35,6 +35,17 @@ Network operators expected to run on with fast-growing multimedia video streamin
 * /testbed : Data generation testbed aligned with codes
 * /tesbed/experiment : Raw network data & video log strorage
 ## Execute the Work
+Option 1: Fully Exucute in local Machine - Ubuntu 18.04
+
+```bash
+Envirionment Setup
+```
+Step 1: [Testbed Setup](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
+Step 2: [Jupyter Notebook setup followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+Step 3: [Scappy](https://anaconda.org/conda-forge/scapy)
+Step 4: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
+
+
 ```bash
 TODO
 ```
