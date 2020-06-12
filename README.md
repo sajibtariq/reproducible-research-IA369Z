@@ -51,24 +51,24 @@ Step 4: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imba
 ```bash
 Data Generation
 ```
-Step 1: Open terminal and execute the following comamand
+Step 1: Open terminal and execute the following command
 
 $ cd ~/reproducible-research-IA369Z/testbed/
 
 $ sudo python3 test_1.py
 
 ```bash
-Data Preprocess raw data to export csv
+Data Preprocess 
 ```
 Step 1: Open jupyter notebook and open the execute-draft.ipynbfile from ~/reproducible-research-IA369Z/deliver/ directory
-Step 2:  Run the cell that contains  " %run ./Raw-data-preprocess-&-csv-export.ipynb" this line 
 
+Raw data to export csv:
 
-```bash
-Data Preprocess split training and testing CSV from exported csv
-```
-Step 1: Open jupyter notebook and open the execute-draft.ipynbfile from ~/reproducible-research-IA369Z/deliver/ directory
-Step 2:  Run the cell that contains  " %run ~/reproducible-research-IA369Z/dev/preprocess.ipynb " this line 
+Step 1:  Run the cell that contains  " %run ./Raw-data-preprocess-&-csv-export.ipynb" this line 
+
+Split training and testing CSV from exported csv:
+
+Step 1:  Run the cell that contains  " %run ~/reproducible-research-IA369Z/dev/preprocess.ipynb " this line 
 
 
 ```bash
