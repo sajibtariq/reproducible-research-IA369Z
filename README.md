@@ -35,14 +35,16 @@ Network operators expected to run on with fast-growing multimedia video streamin
 * /testbed : Data generation testbed aligned with codes
 * /tesbed/experiment : Raw network data & video log strorage
 ## Execute the Work
-Option 1: Fully Exucute in local Machine - Ubuntu 18.04
+**Option 1:** Fully Exucute in local Machine - Ubuntu 18.04
+
+**Note:** Testbed setup, data generation and raw data pre-process steps requires a lot time ans storage to finish. If you want you could sskip this option and follow the Opetion 2 or Option3
 
 ```bash
 Envirionment Setup
 ```
 Step 1: [Testbed Setup](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
 
-Step 2: [Jupyter Notebook setup followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+Step 2: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
 
 Step 3: [Scappy](https://anaconda.org/conda-forge/scapy)
 
@@ -60,23 +62,23 @@ $ sudo python3 test_1.py
 ```bash
 Data Preprocess 
 ```
-Step 1: Open jupyter notebook and open the execute-draft.ipynbfile from ~/reproducible-research-IA369Z/deliver/ directory
+Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/reproducible-research-IA369Z/deliver/** directory
 
 Raw data to export csv:
 
-Step 1:  Run the cell that contains  " %run ./Raw-data-preprocess-&-csv-export.ipynb" this line 
+Step 2:  Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb** this line 
 
 Split training and testing CSV from exported csv:
 
-Step 1:  Run the cell that contains  " %run ~/reproducible-research-IA369Z/dev/preprocess.ipynb " this line 
+Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** this line 
 
 
 ```bash
 Data Analysis
 ```
-Step 1: Open jupyter notebook and open the execute-draft.ipynbfile from ~/reproducible-research-IA369Z/deliver/ directory
-Step 2:  Run the cell that contains  " %run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb " this line
-Step 3:  Run the cell that contains  " %run ~/reproducible-research-IA369Z/dev/rfc.ipynb " this line
+Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb** this line
+
+Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** this line
 
 ## Distrubution
 ```bash
