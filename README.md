@@ -73,12 +73,83 @@ Split training and testing CSV from exported csv:
 Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** this line 
 
 
+**Option 2:** Fully Exucute by provided pre-built VM images including all setup.
+
+The VM images are in .ova format and should be usable with any modern x64 virtualization system.
+
+[52 GB Size] - Ubuntu 18.04 x64 - Dash (pass: dash)
+
+**Note:** If you are able to download the  VM image and import successfully but later not able to perform data generation and raw data preprocess steps inside VM properly due to any technical problem then just skip the Data Generation and Data Preprocess(Raw data to export csv) steps. You can still partially excute the work by completing  only  Data Preprocess(Split training and testing CSV from exported csv) and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory
+
+```bash
+Data Generation
+```
+Step 1: Open terminal and execute the following command
+
+$ cd ~/reproducible-research-IA369Z/testbed/
+
+$ sudo python3 test_1.py
+
+```bash
+Data Preprocess 
+```
+Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/reproducible-research-IA369Z/deliver/** directory
+
+Raw data to export csv:
+
+Step 2:  Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb** this line 
+
+Split training and testing CSV from exported csv:
+
+Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** this line 
+
+
 ```bash
 Data Analysis
 ```
 Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb** this line
 
 Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** this line
+
+
+
+**Option 3:** Partially exucute if not able to perfom Option 1/2 or want to skip Opetion 1/2 (more spceficallly skip testbed setup, data generation and raw data preprocess steps)
+
+```bash
+Envirionment Setup- I woudl suggest use ubuntu 18.04
+```
+Step 1: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+
+Step 2: [Scappy](https://anaconda.org/conda-forge/scapy)
+
+Step 3: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
+
+```bash
+Clone git repository 
+```
+Step 1: Open terminal and execute the following command
+
+$ git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
+
+
+```bash
+Data Preprocess 
+```
+Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/reproducible-research-IA369Z/deliver/** directory
+
+Split training and testing CSV from exported csv:
+
+Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** this line 
+
+
+```bash
+Data Analysis
+```
+Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb** this line
+
+Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** this line
+
+
 
 ## Distrubution
 ```bash
