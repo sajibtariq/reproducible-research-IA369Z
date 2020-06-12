@@ -34,8 +34,9 @@ Network operators expected to run on with fast-growing multimedia video streamin
 * /figures : Research realted figures
 * /testbed : Data generation testbed aligned with codes
 * /tesbed/experiment : Raw network data & video log strorage
-## Execute the Work
-**Option 1:** Fully Exucute in local Machine - Ubuntu 18.04
+
+## Execute the Work: Option 1
+**Fully Exucute in local Machine - Ubuntu 18.04**
 
 **Note:** Testbed setup, data generation and raw data pre-process steps requires a lot time ans storage to finish. If you want you could sskip this option and follow the Opetion 2 or Option3
 
@@ -72,8 +73,8 @@ Split training and testing CSV from exported csv:
 
 Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** this line 
 
-
-**Option 2:** Fully Exucute by provided pre-built VM images including all setup.
+## Execute the Work: Option 2
+**Fully Exucute by provided pre-built VM images including all setup**
 
 The VM images are in .ova format and should be usable with any modern x64 virtualization system.
 
@@ -112,8 +113,9 @@ Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/m
 Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** this line
 
 
+## Execute the Work: Option 3
 
-**Option 3:** Partially exucute if not able to perfom Option 1/2 or want to skip Opetion 1/2 (more spceficallly skip testbed setup, data generation and raw data preprocess steps)
+**Partially exucute if not able to perfom Option 1/2 or want to skip Opetion 1/2 (more spceficallly skip testbed setup, data generation and raw data preprocess steps)**
 
 ```bash
 Envirionment Setup- I woudl suggest use ubuntu 18.04
