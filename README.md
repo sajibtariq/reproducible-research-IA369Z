@@ -41,14 +41,20 @@ Option 1: Fully Exucute in local Machine - Ubuntu 18.04
 Envirionment Setup
 ```
 Step 1: [Testbed Setup](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
+
 Step 2: [Jupyter Notebook setup followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+
 Step 3: [Scappy](https://anaconda.org/conda-forge/scapy)
+
 Step 4: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
-
 ```bash
-TODO
+Data Generation
 ```
+Step 1: Open terminal and execute the following comamand
+
+$ sudo python3 test_1.py
+
 ## Distrubution
 ```bash
 TODO
