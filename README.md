@@ -166,6 +166,6 @@ Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/r
 
 
 ## Distrubution
-- [VM]()(https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) :Ubuntu 18.04 x64 - Dash (pass: dash)
+- [VM](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) :Ubuntu 18.04 x64 - Dash (pass: dash)
 - [Execuyable paper](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/deliver/third-draft.ipynb)
 - [PDF]
