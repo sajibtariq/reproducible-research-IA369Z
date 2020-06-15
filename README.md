@@ -36,6 +36,7 @@ Network operators expected to run on with fastgrowing multimedia video streaming
 * /tesbed/experiment : Raw network data & video log strorage
 
 ##  Option 1 : Execute the Work
+
 **Fully Exucute in local Machine - Ubuntu 18.04**
 
 **Note:** Testbed setup, data generation, and raw data pre-process steps require a lot of time and storage to finish. If you want you could skip this option and follow the Option 2 or Option 3
@@ -66,89 +67,100 @@ $ sudo python3 test_1.py
 Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/reproducible-research-IA369Z/deliver/** directory
 
 **Raw data to export csv**
+
 Step 2: 
 - Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
 **Split training and testing CSV from exported csv**
+
 Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** 
 
-## Execute the Work: Option 2
+##  Option 2 : Execute the Work
+
+
+
+* **Data Analysis**
+
+Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb**
+
+Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
+
+
 **Fully Exucute by provided pre-built VM images including all setup**
 
 The VM images are in .ova format and should be usable with any modern x64 virtualization system.
 
 [52 GB Size] - Ubuntu 18.04 x64 - Dash (pass: dash)
 
-**Note:** If you are able to download the  VM image and import successfully but later not able to perform data generation and raw data preprocess steps inside VM properly due to any technical problem then just skip the Data Generation and Data Preprocess(Raw data to export csv) steps. You can still partially excute the work by completing  only  Data Preprocess(Split training and testing CSV from exported csv) and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory
+**Note:** If you can download the  VM image and import successfully. But later,  not able to perform Data Generation and raw data preprocess steps inside VM properly due to any technical problem. Then, skip the Data Generation and Data Preprocess (Raw data to export CSV) steps. You can still partially execute the work by completing  only  Data Preprocess (Split training and testing CSV from exported CSV)  and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory 
 
-```bash
-Data Generation
-```
-Step 1: Open terminal and execute the following command
+
+* **Data Generation**
+
+Open terminal and execute the following command
 
 $ cd ~/reproducible-research-IA369Z/testbed/
 
 $ sudo python3 test_1.py
 
-```bash
-Data Preprocess 
-```
+* **Data Preprocess** 
+
 Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/reproducible-research-IA369Z/deliver/** directory
 
-Raw data to export csv:
+**Raw data to export csv**
 
-Step 2:  Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb** this line 
+Step 2: 
+- Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
-Split training and testing CSV from exported csv:
+**Split training and testing CSV from exported csv**
 
-Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** this line 
-
-
-```bash
-Data Analysis
-```
-Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb** this line
-
-Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** this line
+Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb**  
 
 
-## Execute the Work: Option 3
+* **Data Analysis**
 
-**Partially exucute if not able to perfom Option 1/2 or want to skip Opetion 1/2 (more spceficallly skip testbed setup, data generation and raw data preprocess steps)**
+Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb**
 
-```bash
-Envirionment Setup- I woudl suggest use ubuntu 18.04
-```
+Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
+
+
+##  Option 3 : Execute the Work
+
+**Partially executable if not able to perform Option 1/2 or want to skip Option 1/2 (more specifically, skipping testbed setup, data generation, and raw data preprocessing steps)**
+
+
+* **Envirionment Setup** ubuntu 18.04 recommended
+
 Step 1: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
 
 Step 2: [Scappy](https://anaconda.org/conda-forge/scapy)
 
 Step 3: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
-```bash
-Clone git repository 
-```
-Step 1: Open terminal and execute the following command
+
+* **Clone repository** 
+
+Open terminal and execute the following command
 
 $ git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
 
 
-```bash
-Data Preprocess 
-```
+* **Data Preprocess**
+
 Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/reproducible-research-IA369Z/deliver/** directory
 
-Split training and testing CSV from exported csv:
+**Split training and testing CSV from exported csv**
 
-Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** this line 
+Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** 
 
 
-```bash
-Data Analysis
-```
-Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb** this line
 
-Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** this line
+* **Data Analysis**
+
+
+Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb** 
+
+Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
 
 
 
