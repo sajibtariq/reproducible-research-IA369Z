@@ -68,7 +68,7 @@ Move to directory ```~/reproducible-research-IA369Z/testbed/``` and run the ```t
 ```bash
 $ sudo python3 test_1.py
 ```
- ```test_1.py``` script contains all the network utilization information as follows for network emulation and internally called ``` test3_1.py``` main script to run the topology and generate raw data from the network interface and logfile from video client.
+ ```test_1.py``` script contains all the network utilization information as follows for network emulation and internally called ``` test3_1.py``` main script to run the topology and generate raw data from the network interface and logfile from video client. Simultaneously stored them ~/reproducible-research-IA369Z/testbed/experiment directory
 
 Technology    | No of traces | Mode                              | No of hos competing at the same time | Adaptive algorithm
 ------------- | ------------ | --------------------------------- | ---------------------------------- | ------------------
