@@ -90,7 +90,7 @@ Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/r
 
 The VM images are in .ova format and should be usable with any modern x64 virtualization system.
 
-[52 GB Size] - Ubuntu 18.04 x64 - Dash (pass: dash)
+[52 GB Size](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) - Ubuntu 18.04 x64 - Dash (pass: dash)
 
 **Note:** If you can download the  VM image and import successfully. But later,  not able to perform Data Generation and raw data preprocess steps inside VM properly due to any technical problem. Then, skip the Data Generation and Data Preprocess (Raw data to export CSV) steps. You can still partially execute the work by completing  only  Data Preprocess (Split training and testing CSV from exported CSV)  and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory 
 
@@ -166,6 +166,6 @@ Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/r
 
 
 ## Distrubution
-```bash
-TODO
-```
+- [VM]()(https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) :Ubuntu 18.04 x64 - Dash (pass: dash)
+- [Execuyable paper](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/deliver/third-draft.ipynb)
+- [PDF]
