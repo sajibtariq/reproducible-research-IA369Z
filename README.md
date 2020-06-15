@@ -1,8 +1,8 @@
 # reproducible-research-IA369Z
 
-# A predictive DASH QoE approach based on machine learning at Multi-Access Edge Computing 
+# A Predictive DASH QoE Approach Based on Machine Learning at Multi-access Edge Computing
 # Abstract
-Network operators expected to run on with fast-growing multimedia video streaming (e.g., DASH) traffic demand while providing a high Quality of Experience (QoE) to the end-users. The cost, complexity, and scalability of existing QoE estimation solutions have significant limitations to infer QoE from network traffic. However, this works provides an end-user QoE estimation method based on a predictive passive QoE probe mechanism of DASH mobile video using a Machine Learning (ML) approach running at network edge nodes. We describe the design and implementation of probe configuration at the target edge, with traffic flow monitoring to generate network-level Quality of Service (QoS) metrics. Moreover, build a QoS-QoE correlation ML model in realtime fashion for detecting patterns of the user equipment traffic behavior to predict user QoE.
+Network operators expected to run on with fastgrowing multimedia video streaming (Dynamic Adaptive Streaming over HTTP, aka MPEG-DASH, such as YouTube and Netflix) traffic demand while providing a high Quality of Experience (QoE) to the end-users. The cost, complexity, and scalability of existing QoE estimation solutions have significant limitations to infer QoE from network traffic. However, this works provides an end-user QoE estimation method based on a predictive passive QoE probe mechanism of DASH video using a Machine Learning (ML) approach running at network edge nodes. This work describes the design and implementation of probe configuration at the target edge, with traffic flow monitoring to generate network-level Quality of Service (QoS) metrics. Moreover, build a QoS-QoE correlation ML model in a real-time fashion to detect user equipment traffic patterns to predict user QoE more specifically Mean Opinion Score (MOS).
 
 ## Workflow
 ![alt text](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/figures/Project%20workflow.jpg?raw=true)
@@ -35,14 +35,14 @@ Network operators expected to run on with fast-growing multimedia video streamin
 * /testbed : Data generation testbed aligned with codes
 * /tesbed/experiment : Raw network data & video log strorage
 
-## Execute the Work: Option 1
+##  Option 1 : Execute the Work
 **Fully Exucute in local Machine - Ubuntu 18.04**
 
-**Note:** Testbed setup, data generation and raw data pre-process steps requires a lot time ans storage to finish. If you want you could sskip this option and follow the Opetion 2 or Option3
+**Note:** Testbed setup, data generation, and raw data pre-process steps require a lot of time and storage to finish. If you want you could skip this option and follow the Option 2 or Option 3
 
-```bash
-Envirionment Setup
-```
+
+* **Envirionment Setup**
+
 Step 1: [Testbed Setup](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
 
 Step 2: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
@@ -51,27 +51,26 @@ Step 3: [Scappy](https://anaconda.org/conda-forge/scapy)
 
 Step 4: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
-```bash
-Data Generation
-```
-Step 1: Open terminal and execute the following command
+
+* **Data Generation**
+
+Open terminal and execute the following command
 
 $ cd ~/reproducible-research-IA369Z/testbed/
 
 $ sudo python3 test_1.py
 
-```bash
-Data Preprocess 
-```
+
+* **Data Preprocess** 
+
 Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/reproducible-research-IA369Z/deliver/** directory
 
-Raw data to export csv:
+**Raw data to export csv**
+Step 2: 
+- Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
-Step 2:  Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb** this line 
-
-Split training and testing CSV from exported csv:
-
-Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** this line 
+**Split training and testing CSV from exported csv**
+Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** 
 
 ## Execute the Work: Option 2
 **Fully Exucute by provided pre-built VM images including all setup**
