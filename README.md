@@ -11,7 +11,7 @@ Network operators expected to run on with fastgrowing multimedia video streaming
 ![alt text](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/figures/Project%20workflow.jpg?raw=true)
 
 ## Requirements
-**Data Aquisition**
+**Data Acquisition**
 
 [Testbed](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
 
