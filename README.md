@@ -69,14 +69,11 @@ Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/
 **Raw data to export csv**
 
 Step 2: 
-- Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
+Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
 **Split training and testing CSV from exported csv**
 
 Step 3:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** 
-
-##  Option 2 : Execute the Work
-
 
 
 * **Data Analysis**
@@ -86,7 +83,10 @@ Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/m
 Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
 
 
-**Fully Exucute by provided pre-built VM images including all setup**
+##  Option 2 : Execute the Work
+
+
+**Fully/Partially Exucute by provided pre-built VM images including all setup**
 
 The VM images are in .ova format and should be usable with any modern x64 virtualization system.
 
@@ -110,7 +110,8 @@ Step 1: Open jupyter notebook and open the **execute-draft.ipynbfile** from **~/
 **Raw data to export csv**
 
 Step 2: 
-- Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
+
+Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
 **Split training and testing CSV from exported csv**
 
