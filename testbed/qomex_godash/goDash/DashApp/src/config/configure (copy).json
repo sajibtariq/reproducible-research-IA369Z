@@ -1,0 +1,18 @@
+{
+        "adapt" : "arbiter",
+        "codec" : "h264",
+        "debug" : "on",
+        "initBuffer" : 2,
+        "maxBuffer" : 60,
+        "maxHeight" : 1080,
+        "streamDuration" : 30,
+        "storeDash" : "3479854",
+        "logFile" : "log_file_2",
+        "getHeaders" : "off",
+        "terminalPrint" : "on",
+        "printHeader" : "{\"Algorithm\":\"on\",\"Seg_Dur\":\"on\",\"Codec\":\"on\",\"Width\":\"on\",\"Height\":\"on\",\"FPS\":\"off\",\"Play_Pos\":\"on\",\"RTT\":\"on\",\"Seg_Repl\":\"off\",\"Protocol\":\"off\",\"P.1203\":\"on\",\"Clae\":\"off\",\"Duanmu\":\"off\",\"Yin\":\"off\",\"Yu\":\"off\"}",
+      
+        "useTestbed" : "off",
+        "url" : "[http://dev.cs.ucc.ie/misl/4K_non_copyright_dataset/2_sec/x264/bbb/DASH_Files/full/bbb_enc_x264_dash.mpd]",
+        "QoE" : "on"
+}

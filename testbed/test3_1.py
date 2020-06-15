@@ -70,12 +70,15 @@ def topology():
     #print net.get('ap1')
     #print net['s3']
 
-    os.system('cd ..reproducible-research-IA369Z/testbed/goDash/DashApp/src/files && sudo rm -R *')
+    os.system('cd ~/reproducible-research-IA369Z/testbed/qomex_godash/goDash/DashApp/src/files && sudo rm -R *')
 
 
     subfolder = 'mode_'+(mod)+ '_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num)+'_host_'+ str(host)+ '_algo_' + str(algo)
-
-    os.system('mkdir -p ../reproducible-research-IA369Z/testbed/experiment/'+ subfolder)
+    
+    global  path
+    path='~/reproducible-research-IA369Z/testbed/experiment'
+    os.system('mkdir -p '+ path+'/'+subfolder)
+    #os.system('mkdir -p ~/reproducible-research-IA369Z/data/testbed/experiment/'+ subfolder)
 
     st=[]
     for i in range(host):
@@ -95,12 +98,12 @@ def topology():
 # caddy server on
 def server(sr):
     print sr
-    print sr.cmd('cd ../reproducible-research-IA369Z/testbed/caddy && ./caddy')
+    print sr.cmd('cd ~/reproducible-research-IA369Z/testbed/caddy && ./caddy')
 
 # pcap collect by tcpdump  from Ap-interface
 def cap2(mod, host, algo, nett, doc, num):
 
-    print os.system('sudo tcpdump -i ap1-eth10 -U -w  ../reproducible-research-IA369Z/testbed/experiment/mode_' + str(mod) + '_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num)+'_host_'+ str(host)+ '_algo_' + str(algo)+'/mode_' + str(mod) + '_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num)+'_host_'+ str(host)+ '_algo_' + str(algo)+'_ap.pcap')
+    print os.system('sudo tcpdump -i ap1-eth10 -U -w ' +path+'/mode_' + str(mod) + '_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num)+'_host_'+ str(host)+ '_algo_' + str(algo)+'/mode_' + str(mod) + '_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num)+'_host_'+ str(host)+ '_algo_' + str(algo)+'_ap.pcap')
 
 #tc script
 def netcon(mod, nett, doc, num, host):
@@ -112,7 +115,7 @@ def test1(mod, client, host, algo, nett, doc, num):
 
     #if algo =='conv':
         print client
-        print client.cmd('cd ../reproducible-research-IA369Z/testbed/goDash/DashApp/src/goDASH && ./goDASH -config ../config/configure.json >../reproducible-research-IA369Z/testbed/experiment/mode_' + str(mod) +'_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num)+'_host_'+ str(host)+ '_algo_' + str(algo)+'/mode_' + str(mod) +'_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num) + '_client_' + str(client)+ '_host_' + str(host)+ '_algo_' + str(algo)+'.txt && echo done_' + str(client))
+        print client.cmd('cd ~/reproducible-research-IA369Z/testbed/qomex_godash/goDash/DashApp/src/goDASH && ./goDASH -config ../config/configure.json > ' +path+'/mode_' + str(mod) +'_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num)+'_host_'+ str(host)+ '_algo_' + str(algo)+'/mode_' + str(mod) +'_net_' + str(nett) +'_doc_' + str(doc) + '_num_' + str(num) + '_client_' + str(client)+ '_host_' + str(host)+ '_algo_' + str(algo)+'.txt && echo done_' + str(client))
 
 
 

@@ -13,7 +13,7 @@ while [ $a -lt 2 ]; do
     array=()
     i=1
     j=1
-    cut -d, -f 1,2 --output-delimiter=' ' /home/dash/Downloads/dashc-updated-algorithms/dashc/Band_data/Band_data/$mod/$net/$doc$num.csv | while read col1 col2 ; do
+    cut -d, -f 1,2 --output-delimiter=' ' ~/reproducible-research-IA369Z/testbed/Band_data/Band_data/$mod/$net/$doc$num.csv | while read col1 col2 ; do
     array[$i]=$col2
     array1[$j]=$col1
 

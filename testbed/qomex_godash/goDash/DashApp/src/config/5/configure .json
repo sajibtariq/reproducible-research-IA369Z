@@ -1,0 +1,20 @@
+{
+        "adapt" : "logistic",
+        "codec" : "h264",
+        "debug" : "off",
+        "initBuffer" : 2,
+        "maxBuffer" : 60,
+        "maxHeight" : 1080,
+        "streamDuration" : 120,
+    
+        "logFile" : "log_file_2",
+        "getHeaders" : "off",
+        "terminalPrint" : "on",
+        "printHeader" : "{\"Algorithm\":\"on\",\"Seg_Dur\":\"on\",\"Codec\":\"on\",\"Width\":\"on\",\"Height\":\"on\",\"FPS\":\"off\",\"Play_Pos\":\"on\",\"RTT\":\"on\",\"Seg_Repl\":\"off\",\"Protocol\":\"off\",\"P.1203\":\"on\",\"Clae\":\"off\",\"Duanmu\":\"off\",\"Yin\":\"off\",\"Yu\":\"off\"}",
+        "hls" : "off",
+        "expRatio" : 0.2,
+        "quic" : "off",
+        "useTestbed" : "off",
+        "url" : "[http://192.168.0.150:2015/html/www.cs.ucc.ie/~jq5/www_dataset_temp/x264_2sec/bbb_10min/DASH_Files/#VOD/bbb_enc_10min_x264_dash.mpd]",
+        "QoE" : "on"
+}

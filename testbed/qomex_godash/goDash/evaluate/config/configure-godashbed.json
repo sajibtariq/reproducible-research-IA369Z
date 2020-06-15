@@ -1,0 +1,20 @@
+{
+    "adapt" : "arbiter",
+    "codec" : "h264",
+    "debug" : "off",
+    "initBuffer" : 2,
+    "maxBuffer" : 60,
+    "maxHeight" : 1080,
+    "streamDuration" : 10,
+    "storeDash" : "3479854",
+    "logFile" : "log_file_2",
+    "getHeaders" : "on",
+    "terminalPrint" : "on",
+    "printHeader" : "{\"Algorithm\":\"off\",\"Seg_Dur\":\"on\",\"Codec\":\"off\",\"Width\":\"on\",\"Height\":\"on\",\"FPS\":\"off\",\"Play_Pos\":\"on\",\"RTT\":\"off\",\"Seg_Repl\":\"off\",\"Protocol\":\"off\",\"P.1203\":\"on\",\"Clae\":\"on\",\"Duanmu\":\"on\",\"Yin\":\"on\",\"Yu\":\"on\"}",
+    "hls" : "off",
+    "expRatio" : 0.2,
+    "quic" : "on",
+    "useTestbed" : "on",
+    "url" : "[https://www.godashbed.org/ed_10min/DASH_Files/VOD/ed_enc_10min_x264_dash.mpd]",
+    "QoE" : "on"
+}
