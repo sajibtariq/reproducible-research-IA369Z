@@ -30,6 +30,9 @@ Network operators expected to run on with fast growing multimedia video streamin
 
 [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
+[nest-asyncio](https://anaconda.org/conda-forge/nest-asyncio)
+
+
 ## Folder Stucture Scheme
 * /data : Exported CSV file during preprocess from raw data
 * /deliver : Executable notebook 
@@ -54,6 +57,8 @@ Step 2: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anacon
 Step 3: [Scappy](https://anaconda.org/conda-forge/scapy)
 
 Step 4: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
+
+Step 5: [nest-asyncio](https://anaconda.org/conda-forge/nest-asyncio)
 
 
 * **Data Generation**
@@ -141,6 +146,9 @@ Step 1: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anacon
 Step 2: [Scappy](https://anaconda.org/conda-forge/scapy)
 
 Step 3: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
+
+Step 4: [nest-asyncio](https://anaconda.org/conda-forge/nest-asyncio)
+
 
 
 * **Clone repository** 
