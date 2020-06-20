@@ -33,7 +33,7 @@ Network operators expected to run on with fast growing multimedia video streamin
 [nest-asyncio](https://anaconda.org/conda-forge/nest-asyncio)
 
 
-## Folder Stucture Scheme
+## Folder Structure Scheme
 * /data : Exported CSV file during preprocess from raw data
 * /deliver : Executable notebook 
 * /dev : Notebook along with data pre-process and analysis codes
