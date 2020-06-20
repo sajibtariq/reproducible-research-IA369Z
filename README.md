@@ -26,7 +26,7 @@ Network operators expected to run on with fast growing multimedia video streamin
 - Scikit-Learn
 ```
 
-[Scappy](https://anaconda.org/conda-forge/scapy)
+[Scapy](https://anaconda.org/conda-forge/scapy)
 
 [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
@@ -37,24 +37,24 @@ Network operators expected to run on with fast growing multimedia video streamin
 * /data : Exported CSV file during preprocess from raw data
 * /deliver : Executable notebook 
 * /dev : Notebook along with data pre-process and analysis codes
-* /figures : Research realted figures
+* /figures : Research related figures
 * /testbed : Data generation testbed aligned with codes
 * /tesbed/experiment : Raw network data & video log strorage
 
 ##  Option 1 : Execute the Work
 
-**Fully Exucute in local Machine - Ubuntu 18.04**
+**Fully Execute in local Machine - Ubuntu 18.04**
 
 **Note:** Testbed setup, data generation, and raw data pre-process steps require a lot of time and storage to finish. If you want you could skip this option and follow the Option 2 or Option 3
 
 
-* **Envirionment Setup**
+* **Environment Setup**
 
 Step 1: [Testbed Setup](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
 
 Step 2: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
 
-Step 3: [Scappy](https://anaconda.org/conda-forge/scapy)
+Step 3: [Scapy](https://anaconda.org/conda-forge/scapy)
 
 Step 4: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
