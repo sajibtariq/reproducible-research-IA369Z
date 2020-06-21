@@ -19,11 +19,13 @@ Network operators expected to run on with fast growing multimedia video streamin
 
 [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
 ```bash
-- Numpy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-Learn
+- Notebook==6.0.3
+- Numpy==1.18.1
+- Pandas==1.0.1
+- Matplotlib==3.1.3
+- Seaborn==0.10.0
+- Scikit-Learn==0.22.1
+- Scipy==1.4.1
 ```
 
 [Scapy](https://anaconda.org/conda-forge/scapy)
@@ -181,4 +183,4 @@ Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/r
 ## Distribution
 
 - [VM](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) :Ubuntu 18.04 x64 - Dash (pass: dash)
-
+- Docker: Todo (Future Task)
