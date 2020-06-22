@@ -126,7 +126,10 @@ Step 1: Open jupyter notebook and open the  **third-draft.ipynb** document from 
 
 Step 2: **Raw data to export csv**
 
-####* **Note:** You need do a minor change inside the provided VM. Rename the ***Raw data preprocess & csv export.ipynb** document at **~/reproducible-research-IA369Z/deliver/** directory as **Raw-data-preprocess-&-csv-export.ipynb** *
+
+* **Note:** You need do a minor change inside the provided pre-built VM. Rename the ***Raw data preprocess & csv export.ipynb** document from **~/reproducible-research-IA369Z/deliver/** directory as **Raw-data-preprocess-&-csv-export.ipynb** *
+
+
 
 Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
