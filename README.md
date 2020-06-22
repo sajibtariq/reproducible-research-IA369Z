@@ -118,7 +118,7 @@ $ sudo python3 test_1.py
 
 Step 1: Open jupyter notebook and open the  **third-draft.ipynb** document from **~/reproducible-research-IA369Z/deliver/** directory
 
-Step 2: **Raw data to export csv**
+Step 2: **Raw data to export csv** *You just need do a minor change in the provided VM. Rename the  Raw data preprocess & csv export.ipynb document at **~/reproducible-research-IA369Z/deliver/** directory as Raw-data-preprocess-&-csv-export.ipynb*
 
 Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
