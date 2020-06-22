@@ -2,7 +2,7 @@
 
 # A Predictive DASH QoE Approach Based on Machine Learning at Multi-access Edge Computing
 # Abstract
-Network operators expected to run on with fast growing multimedia video streaming (Dynamic Adaptive Streaming over HTTP, aka MPEG-DASH, such as YouTube and Netflix) traffic demand while providing a high Quality of Experience (QoE) to the end-users. The cost, complexity, and scalability of existing QoE estimation solutions have significant limitations to infer QoE from network traffic. However, this works provides an end-user QoE estimation method based on a predictive passive QoE probe mechanism of DASH video using a Machine Learning (ML) approach running at network edge nodes. This work describes the design and implementation of probe configuration at the target edge, with traffic flow monitoring to generate network-level Quality of Service (QoS) metrics. Moreover, build a QoS-QoE correlation ML model in a real-time fashion to detect user equipment traffic patterns to predict user QoE more specifically Mean Opinion Score (MOS).
+Network operators expected to run on with fast growing multimedia video streaming (Dynamic Adaptive Streaming over HTTP, aka MPEG-DASH, such as YouTube and  Netflix) traffic demand while providing a high Quality of Experience (QoE) to the end-users. The cost, complexity, and scalability of existing QoE estimation solutions have significant limitations to infer QoE from network traffic. However, this works provides an end-user QoE estimation method based on a predictive passive QoE probe mechanism of DASH video using a Machine Learning (ML) approach running at network edge nodes. This work describes the design and implementation of probe configuration at the target edge, with traffic flow monitoring to generate network-level Quality of Service (QoS) metrics. Moreover, build a QoS-QoE correlation ML model in a real-time fashion to detect user equipment traffic patterns to predict user QoE more specifically Mean Opinion Score (MOS).
 
 - [PDF version of paper](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/deliver/project.pdf)
 - [Executable paper](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/deliver/third-draft.ipynb)
@@ -79,17 +79,21 @@ Step 1: Open jupyter notebook and open the **third-draft.ipynb** document from *
 
 Step 2: **Raw data to export csv**
 
+
 Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
 
 Step 3: **Split training and testing CSV from exported csv**
+
 
 Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** 
 
 
 * **Data Analysis**
 
+
 Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb**
+
 
 Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
 
@@ -101,7 +105,7 @@ Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/r
 
 The VM images are in .ova format and should be usable with any modern x64 virtualization system.
 
-[52 GB Size](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) - Ubuntu 18.04 x64 - Dash (pass: dash)
+[40 GB Size](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) - Ubuntu 18.04 x64 - Dash (pass: dash)
 
 **Note:** If you can download the  VM image and import successfully. But later,  not able to perform Data Generation and raw data preprocess steps inside VM properly due to any technical problem. Then, skip the Data Generation and Data Preprocess (Raw data to export CSV) steps. You can still partially execute the work by completing  only  Data Preprocess (Split training and testing CSV from exported CSV)  and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory 
 
@@ -114,11 +118,15 @@ $ cd ~/reproducible-research-IA369Z/testbed/
 
 $ sudo python3 test_1.py
 
+
 * **Data Preprocess** 
 
 Step 1: Open jupyter notebook and open the  **third-draft.ipynb** document from **~/reproducible-research-IA369Z/deliver/** directory
 
-Step 2: **Raw data to export csv** *You just need do a minor change in the provided VM. Rename the  Raw data preprocess & csv export.ipynb document at **~/reproducible-research-IA369Z/deliver/** directory as Raw-data-preprocess-&-csv-export.ipynb*
+
+Step 2: **Raw data to export csv**
+
+***Note:** You need do a minor change inside the provided VM. Rename the ***Raw data preprocess & csv export.ipynb** document at **~/reproducible-research-IA369Z/deliver/** directory as **Raw-data-preprocess-&-csv-export.ipynb***
 
 Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
 
@@ -131,7 +139,9 @@ Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess
 
 * **Data Analysis**
 
+
 Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb**
+
 
 Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
 
@@ -157,6 +167,7 @@ Step 4: [nest-asyncio](https://anaconda.org/conda-forge/nest-asyncio)
 
 Open terminal and execute the following command
 
+
 $ git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
 
 
@@ -166,6 +177,7 @@ Step 1: Open jupyter notebook and open the **third-draft.ipynb** document from *
 
 
 Step 2: **Split training and testing CSV from exported csv**
+
 
 Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** 
 
