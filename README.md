@@ -11,13 +11,17 @@ Network operators expected to run on with fast growing multimedia video streamin
 ![alt text](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/figures/Project%20workflow.jpg?raw=true)
 
 ## Requirements
+
 **Data Acquisition**
 
 [Testbed](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
 
 **Data Pre-processing, Data Analysis & Executable Paper**
 
-[Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+[Jupyter Notebook followed by given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
+
+**Note:** It is recommended install anaconda in home directory (e.g., /home/HOSTNAME/anaconda3)
+
 ```bash
 - Notebook==6.0.3
 - Numpy==1.18.1
@@ -36,12 +40,23 @@ Network operators expected to run on with fast growing multimedia video streamin
 
 
 ## Folder Structure Scheme
-* /data : Exported CSV file during preprocess from raw data
-* /deliver : Executable notebook 
+
+* /data : Exported CSV along with splited training and testing CSV file
+* /deliver : Executable notebook and original pdf
 * /dev : Notebook along with data pre-process and analysis codes
 * /figures : Research related figures
 * /testbed : Data generation testbed aligned with codes
 * /tesbed/experiment : Raw network data & video log strorage
+
+## Caution
+
+- While fully reproduce by manually testbed setup, data generation, and raw data pre-process steps require a lot of time and storage to finish [pre-built VM recommmended-pass:dash](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) 
+- You might get any unwanted error during manually testbed setup [pre-built VM recommmended-pass:dash](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) 
+- You might face problem to execute the notebook if anaconnda not installed by given instrauctuion [pre-built VM recommmended-pass:dash](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) 
+- Fully reproducible Pre-bulit VM large in size [due to install testbed and generate raw data, it requires a bit more memory space]
+- Appreciated if you are able to download Pre-bulit VM  and complete all steps, otherwise, option 3:execute the work recommmended
+- Grid serach procedures in data analysis step will take time to complete; you might get differnt tunned parmaeters and bit different overall result due to random seeds.
+
 
 ##  Option 1 : Execute the Work
 
@@ -54,7 +69,7 @@ Network operators expected to run on with fast growing multimedia video streamin
 
 Step 1: [Testbed Setup](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
 
-Step 2: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+Step 2: [Jupyter Notebook followed by given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
 
 Step 3: [Scapy](https://anaconda.org/conda-forge/scapy)
 
@@ -156,7 +171,7 @@ Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/r
 
 * **Envirionment Setup** ubuntu 18.04 recommended
 
-Step 1: [Jupyter Notebook followed by Anaconda](https://docs.anaconda.com/anaconda/install/)
+Step 1: [Jupyter Notebook followed by given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
 
 Step 2: [Scappy](https://anaconda.org/conda-forge/scapy)
 
