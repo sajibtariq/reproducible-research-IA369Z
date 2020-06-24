@@ -1,0 +1,16 @@
+It is recommended install conda in your home directory (e.g., /home/HOSTNAME/anaconda3)
+
+Step 1:  Open your terminal and execute the following commands---
+
+Step 2:  curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+
+Step 3:  sha256sum Anaconda3-2019.03-Linux-x86_64.sh
+
+Step 3:  bash Anaconda3-2019.03-Linux-x86_64.sh
+
+You’ll receive output to review the license agreement by pressing ENTER until you reach the end. When you get to the end of the license, type yes as long as you agree to the license to complete the installation. Once you agree to the license, you will be prompted to choose the location of the installation. You can press ENTER to accept the default location, or specify a different location. At this point, the installation will proceed. Note that the installation process takes some time.
+Once the installation is complete.  It is recommended that you type yes to use the conda command.
+
+Step 4: source ~/.bashrc
+
+Step 5: conda update --all
