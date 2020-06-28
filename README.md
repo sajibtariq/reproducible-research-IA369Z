@@ -249,9 +249,7 @@ Step 2: To get the prediction result, run the following cell in notebook:
 
 Wrapped with the packeages that just required for working with pre-proccess exported csv file.
 
-* **Requirement**
-
-* [Oracle  VirtualBox 6.1.10](https://www.virtualbox.org/wiki/Downloads)
+* **Requirement**: [Oracle  VirtualBox 6.1.10](https://www.virtualbox.org/wiki/Downloads)
 
 * **To Update the Existing Project git Repository** 
 
