@@ -287,9 +287,8 @@ Step 2: To get the prediction result, run the following cell in notebook:
 
 ## Distribution
 
-- [x] [VM](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq)[40 GB Size]: Ubuntu 18.04 x64 - Dash (pass: dash)
-
-- [ ] Docker: Todo (Future Task)
+- [x] For Option 2: [VM](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq)[40 GB Size]: Ubuntu 18.04 x64 - Dash(pass: dash)
+- [x] For Option 3: [VM](https://drive.google.com/file/d/1MvVY07HkV0RHtQ20fvIozUtPLssK72S9/view?usp=sharing)[7 GB Size]: Ubuntu 18.04 x64 - Dash(pass: dash)
 
 ## License
 [GPL-3.0](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/LICENSE)
