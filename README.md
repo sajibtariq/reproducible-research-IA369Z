@@ -18,7 +18,7 @@ Network operators expected to run on with fast growing multimedia video streamin
 
 **Data Pre-processing, Data Analysis & Executable Paper**
 
-[Jupyter Notebook followed by given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
+[Jupyter Notebook followed by anaconda and given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
 
 **Note:** It is recommended install anaconda in home directory (e.g., /home/HOSTNAME/anaconda3)
 
@@ -49,7 +49,6 @@ Network operators expected to run on with fast growing multimedia video streamin
 * /tesbed/experiment : Raw network data & video log strorage
 
 ## Cautions
-## Cautions
 
 - **Though there is three option available at below to execute the work. I will recommend to follow option 3 to get the same result I presented at work**
 
@@ -60,7 +59,7 @@ Network operators expected to run on with fast growing multimedia video streamin
 
 ##  Option 1 : Execute the Work
 
-**Fully reproducible in local Machine - Ubuntu 18.04**
+**Fully reproducible in Local Machine - Ubuntu 18.04**
 
 **Note:** Testbed setup, data generation, and raw data pre-process steps require a lot of time and storage to finish. If you want you could skip this option and follow the option 2 or 3.
 
@@ -101,8 +100,6 @@ Step 2: To export csv from raw data, run the following cell in notebook:
 
 %run ./Raw-data-preprocess-&-csv-export.ipynb
 ```
-****  
-
 
 Step 3: To split training and testing csv from exported csv, run the following cell in notebook:
 
@@ -133,9 +130,8 @@ Step 2: To get the prediction result, run the following cell in notebook:
 
 **Fully/Partially reproducible by provided pre-built VM including all dependencies**
 
-The VM images are in .ova format and should be usable with any modern x64 virtualization system.
+[Pre-built VM ](#Distribution) is available in .ova format and should be usable with any modern x64 virtualization system.
 
-[40 GB Size](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) - Ubuntu 18.04 x64 - Dash (pass: dash)
 
 **Note:** If you can download the  VM image and import successfully. But later,  not able to perform Data Generation and Raw data preprocess steps inside VM properly due to any technical problem. Then, skip the Data Generation and Data Preprocess (Raw data to export CSV) steps. You can still partially execute the work by completing  only  Data Preprocess (Split training and testing CSV from exported CSV)  and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory 
 
@@ -225,7 +221,7 @@ git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
 
 * **Data Preprocess** 
 
-Step 1: Open jupyter notebook and open the **third-draft.ipynb** notebookt from **~/reproducible-research-IA369Z/deliver/** directory.
+Step 1: Open jupyter notebook and open the **third-draft.ipynb** notebook from **~/reproducible-research-IA369Z/deliver/** directory.
 
 Step 2: To split training and testing csv from exported csv, run the following cell in notebook:
 
@@ -248,7 +244,8 @@ Step 2: To get the prediction result, run the following cell in notebook:
 %run ~/reproducible-research-IA369Z/dev/rfc.ipynb
 
 ```
-### Pre-built VM: 
+### [Pre-built VM:](#Distribution)
+
 Wrapped with the packeages that just required for working with pre-proccess exported csv file.
 
 * **Data Preprocess** 
@@ -274,10 +271,11 @@ Step 2: To get the prediction result, run the following cell in notebook:
 
 ```bash
 %run ~/reproducible-research-IA369Z/dev/rfc.ipynb
-
+```
 
 
 ## Distribution
 
-- [x] [VM](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) :Ubuntu 18.04 x64 - Dash (pass: dash)
+- [x] [VM](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq)[40 GB Size]: Ubuntu 18.04 x64 - Dash (pass: dash)
+
 - [ ] Docker: Todo (Future Task)
