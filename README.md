@@ -292,4 +292,4 @@ Step 2: To get the prediction result, run the following cell in notebook:
 - [ ] Docker: Todo (Future Task)
 
 ## License
-[GPL](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/LICENSE)
+[GPL-3.0](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/LICENSE)
