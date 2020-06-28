@@ -48,28 +48,28 @@ Network operators expected to run on with fast growing multimedia video streamin
 * /testbed : Data generation testbed aligned with codes
 * /tesbed/experiment : Raw network data & video log strorage
 
-## Caution
+## Cautions
+## Cautions
 
-- While fully reproduce by manually testbed setup, data generation, and raw data pre-process steps require a lot of time and storage to finish [pre-built VM recommmended-pass:dash](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) 
-- You might get any unwanted error during manually testbed setup [pre-built VM recommmended-pass:dash](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) 
-- You might face problem to execute the notebook if anaconnda not installed by given instrauctuion [pre-built VM recommmended-pass:dash](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) 
-- Fully reproducible Pre-bulit VM large in size [due to install testbed and generate raw data, it requires a bit more memory space]
-- Appreciated if you are able to download Pre-bulit VM  and complete all steps, otherwise, option 3:execute the work recommmended
-- Grid serach procedures in data analysis step will take time to complete; you might get differnt tunned parmaeters and bit different overall result due to random seeds.
+- **Though there is three option available at below to execute the work. I will recommend to follow option 3 to get the same result I presented at work**
+
+- Option 1 and 2 shared for being fully transparent about the work and data provenance.  While fully reproduce, followed by Option 1  manually testbed setup, data generation, and raw data, pre-process steps require a lot of time and storage to finish. You might get any unwanted error during manually testbed setup.
+ - To avoid the dependency hell for Option 1, a pre-built VM provided in option 2.  Testbed installation and raw data generation require a bit more memory space. Therefore fully reproducible pre-built VM is too large. To download this VM, good internet speed, and later work with it, a high configuration computer system recommended. 
+- In options 1 and 2, you will get new raw data which pattern might be different from my data as I present in my work. Thus you may get a different final result.
 
 
 ##  Option 1 : Execute the Work
 
-**Fully Execute in local Machine - Ubuntu 18.04**
+**Fully reproducible in local Machine - Ubuntu 18.04**
 
-**Note:** Testbed setup, data generation, and raw data pre-process steps require a lot of time and storage to finish. If you want you could skip this option and follow the Option 2 or Option 3
+**Note:** Testbed setup, data generation, and raw data pre-process steps require a lot of time and storage to finish. If you want you could skip this option and follow the option 2 or 3.
 
 
 * **Environment Setup**
 
 Step 1: [Testbed Setup](https://github.com/sajibtariq/reproducible-research-IA369Z/tree/master/testbed)
 
-Step 2: [Jupyter Notebook followed by given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
+Step 2: [Jupyter Notebook followed by anaconda and given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
 
 Step 3: [Scapy](https://anaconda.org/conda-forge/scapy)
 
@@ -80,133 +80,200 @@ Step 5: [nest-asyncio](https://anaconda.org/conda-forge/nest-asyncio)
 
 * **Data Generation**
 
-Open terminal and execute the following command
+Step  1: Open terminal and execute the following command:
 
-$ cd ~/reproducible-research-IA369Z/testbed/
+```bash
+ cd ~/reproducible-research-IA369Z/testbed/
 
-$ sudo python3 test_1.py
+ sudo python3 test_1.py
+```
 
 
 * **Data Preprocess** 
 
-Step 1: Open jupyter notebook and open the **third-draft.ipynb** document from **~/reproducible-research-IA369Z/deliver/** directory
+Step 1: Open jupyter notebook and open the **third-draft.ipynb** notebook from **~/reproducible-research-IA369Z/deliver/** directory.
 
 
-Step 2: **Raw data to export csv**
+Step 2: To export csv from raw data, run the following cell in notebook:
 
 
-Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
+```bash
+
+%run ./Raw-data-preprocess-&-csv-export.ipynb
+```
+****  
 
 
-Step 3: **Split training and testing CSV from exported csv**
+Step 3: To split training and testing csv from exported csv, run the following cell in notebook:
 
-
-Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** 
+```bash
+%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb
+```
 
 
 * **Data Analysis**
 
 
-Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb**
+Step 1: To execute the grid serach and model accuracy program, run the following cell in notebook:
 
+```bash
+%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb
+```
 
-Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
+Step 2: To get the prediction result, run the following cell in notebook:
+
+```bash
+%run ~/reproducible-research-IA369Z/dev/rfc.ipynb
+```
+ 
 
 
 ##  Option 2 : Execute the Work
 
 
-**Fully/Partially Exucute by provided pre-built VM images including all setup**
+**Fully/Partially reproducible by provided pre-built VM including all dependencies**
 
 The VM images are in .ova format and should be usable with any modern x64 virtualization system.
 
 [40 GB Size](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq) - Ubuntu 18.04 x64 - Dash (pass: dash)
 
-**Note:** If you can download the  VM image and import successfully. But later,  not able to perform Data Generation and raw data preprocess steps inside VM properly due to any technical problem. Then, skip the Data Generation and Data Preprocess (Raw data to export CSV) steps. You can still partially execute the work by completing  only  Data Preprocess (Split training and testing CSV from exported CSV)  and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory 
+**Note:** If you can download the  VM image and import successfully. But later,  not able to perform Data Generation and Raw data preprocess steps inside VM properly due to any technical problem. Then, skip the Data Generation and Data Preprocess (Raw data to export CSV) steps. You can still partially execute the work by completing  only  Data Preprocess (Split training and testing CSV from exported CSV)  and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory 
 
 
 * **Data Generation**
 
-Open terminal and execute the following command
+Step  1: Open terminal and execute the following command:
 
-$ cd ~/reproducible-research-IA369Z/testbed/
+```bash
+ cd ~/reproducible-research-IA369Z/testbed/
 
-$ sudo python3 test_1.py
-
-
+ sudo python3 test_1.py
+ 
+```
 * **Data Preprocess** 
 
-Step 1: Open jupyter notebook and open the  **third-draft.ipynb** document from **~/reproducible-research-IA369Z/deliver/** directory
+Step 1: Open jupyter notebook and open the **third-draft.ipynb** notebook from **~/reproducible-research-IA369Z/deliver/** directory.
 
 
-Step 2: **Raw data to export csv**
+Step 2: Rename the 'Raw data preprocess & csv export.ipynb' notebook from **~/reproducible-research-IA369Z/dev/** directory as 'Raw-data-preprocess-&-csv-export.ipynb'.
+
+Step 3: To export csv from raw data, run the following cell in notebook:
+
+```bash
+%run ./Raw-data-preprocess-&-csv-export.ipynb
+```
+****  
 
 
-***You need do a minor change inside the provided pre-built VM. Rename the Raw data preprocess & csv export.ipynb document from ~/reproducible-research-IA369Z/deliver/ directory as Raw-data-preprocess-&-csv-export.ipynb***
+Step 4: To split training and testing csv from exported csv, run the following cell in notebook:
 
-
-
-Run the cell that contains  **%run ./Raw-data-preprocess-&-csv-export.ipynb**  
-
-
-Step 3: **Split training and testing CSV from exported csv**
-
-
-Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb**  
-
-
+```bash
+%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb
+```
 * **Data Analysis**
 
 
-Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb**
+Step 1: To execute the grid serach and model accuracy program, run the following cell in notebook:
 
+```bash
+%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb
+```
 
-Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
+Step 2: To get the prediction result, run the following cell in notebook:
+
+```bash
+%run ~/reproducible-research-IA369Z/dev/rfc.ipynb
+```
+ 
+
+ 
 
 
 ##  Option 3 : Execute the Work
 
-**Partially executable if not able to perform Option 1/2 or want to skip Option 1/2 (more specifically, skipping testbed setup, data generation, and raw data preprocessing steps)**
+**Reprducible based on pre-processed data from raw data (more specifically, skipping testbed setup, data generation, and raw data preprocessing steps)**
 
+### Local machine:
 
 * **Envirionment Setup** ubuntu 18.04 recommended
 
-Step 1: [Jupyter Notebook followed by given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
+Step 1: [Jupyter Notebook followed by anaconda and given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
 
-Step 2: [Scappy](https://anaconda.org/conda-forge/scapy)
+```bash
+- Notebook==6.0.3
+- Numpy==1.18.1
+- Pandas==1.0.1
+- Matplotlib==3.1.3
+- Seaborn==0.10.0
+- Scikit-Learn==0.22.1
+- Scipy==1.4.1
+```
 
-Step 3: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
+**Note:** It is recommended install anaconda in home directory (e.g., /home/HOSTNAME/anaconda3)
 
-Step 4: [nest-asyncio](https://anaconda.org/conda-forge/nest-asyncio)
-
+Step 2: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
 
 * **Clone repository** 
 
-Open terminal and execute the following command
+Step 1: Open terminal and execute the following command:
 
+```bash
+git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
 
-$ git clone https://github.com/sajibtariq/reproducible-research-IA369Z.git
+```
 
+* **Data Preprocess** 
 
-* **Data Preprocess**
+Step 1: Open jupyter notebook and open the **third-draft.ipynb** notebookt from **~/reproducible-research-IA369Z/deliver/** directory.
 
-Step 1: Open jupyter notebook and open the **third-draft.ipynb** document from **~/reproducible-research-IA369Z/deliver/** directory
+Step 2: To split training and testing csv from exported csv, run the following cell in notebook:
 
-
-Step 2: **Split training and testing CSV from exported csv**
-
-
-Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb** 
-
-
+```bash
+%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb
+```
 
 * **Data Analysis**
 
 
-Step 1:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb** 
+Step 1: To execute the grid serach and model accuracy program, run the following cell in notebook:
 
-Step 2:  Run the cell that contains  **%run ~/reproducible-research-IA369Z/dev/rfc.ipynb** 
+```bash
+%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb
+```
+
+Step 2: To get the prediction result, run the following cell in notebook:
+
+```bash
+%run ~/reproducible-research-IA369Z/dev/rfc.ipynb
+
+```
+### Pre-built VM: 
+Wrapped with the packeages that just required for working with pre-proccess exported csv file.
+
+* **Data Preprocess** 
+
+Step 1: Open jupyter notebook and open the **third-draft.ipynb** notebook from **~/reproducible-research-IA369Z/deliver/** directory.
+
+Step 2: To split training and testing csv from exported csv, run the following cell in notebook:
+
+```bash
+%run ~/reproducible-research-IA369Z/dev/preprocess.ipynb
+```
+
+* **Data Analysis**
+
+
+Step 1: To execute the grid serach and model accuracy program, run the following cell in notebook:
+
+```bash
+%run ~/reproducible-research-IA369Z/dev/model_accuracy_with_grid_search.ipynb
+```
+
+Step 2: To get the prediction result, run the following cell in notebook:
+
+```bash
+%run ~/reproducible-research-IA369Z/dev/rfc.ipynb
 
 
 
