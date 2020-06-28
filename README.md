@@ -290,3 +290,6 @@ Step 2: To get the prediction result, run the following cell in notebook:
 - [x] [VM](https://drive.google.com/open?id=1lwCD_fe47DXEOuD1L1LbO8a6otn_8WTq)[40 GB Size]: Ubuntu 18.04 x64 - Dash (pass: dash)
 
 - [ ] Docker: Todo (Future Task)
+
+## License
+[GPL](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/LICENSE)
