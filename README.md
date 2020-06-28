@@ -249,7 +249,7 @@ Step 2: To get the prediction result, run the following cell in notebook:
 
 Wrapped with the packeages that just required for working with pre-proccess exported csv file.
 
- **To update the existing project git repository** 
+* **To Update the Existing Project git Repository** 
 
 Step 1: Open terminal and execute the following command:
 
