@@ -46,7 +46,7 @@ Network operators expected to run on with fast growing multimedia video streamin
 * /dev : Notebook along with data pre-process and analysis codes
 * /figures : Research related figures
 * /testbed : Data generation testbed aligned with codes
-* /tesbed/experiment : Raw network data & video log strorage
+* /tesbed/experiment : Raw network data & video log storage
 
 ## Cautions
 
