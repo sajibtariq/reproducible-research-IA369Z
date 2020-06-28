@@ -50,7 +50,7 @@ Network operators expected to run on with fast growing multimedia video streamin
 
 ## Cautions
 
-- **Though there is three option available at below to execute the work. I will recommend to follow option 3 to get the same result I presented at work**
+- **Though there is three option available at below to execute the work. I will recommend to follow [option 3](Option 3 : Execute the Work) to get the same result I presented at work**
 
 - Option 1 and 2 shared for being fully transparent about the work and data provenance.  While fully reproduce, followed by Option 1  manually testbed setup, data generation, and raw data, pre-process steps require a lot of time and storage to finish. You might get any unwanted error during manually testbed setup.
  - To avoid the dependency hell for Option 1, a pre-built VM provided in option 2.  Testbed installation and raw data generation require a bit more memory space. Therefore fully reproducible pre-built VM is too large. To download this VM, good internet speed, and later work with it, a high configuration computer system recommended. 
