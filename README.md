@@ -52,8 +52,8 @@ Network operators expected to run on with fast growing multimedia video streamin
 
 - Though there is three option available at below to execute the work. I will recommend to follow [option 3](#option-3--execute-the-work) to get the same result I presented at my work
 
-- Option 1 and 2 shared for being fully transparent about the work and data provenance.  While fully reproduce, followed by Option 1  manually testbed setup, data generation, and raw data, pre-process steps require a lot of time and storage to finish. You might get any unwanted error during manually testbed setup.
- - To avoid the dependency hell for Option 1, a pre-built VM provided in option 2.  Testbed installation and raw data generation require a bit more memory space. Therefore fully reproducible pre-built VM is too large. To download this VM, good internet speed, and later work with it, a high configuration computer system recommended. 
+- Option 1 and 2 shared for being fully transparent about the work and data provenance.  While fully reproduce, followed by option 1  manually testbed setup, data generation, and raw data, pre-process steps require a lot of time and storage to finish. You might get any unwanted error during manually testbed setup.
+ - To avoid the dependency hell for option 1, a pre-built VM provided in option 2.  Testbed installation and raw data generation require a bit more memory space. Therefore fully reproducible pre-built VM is too large. To download this VM, good internet speed, and later work with it, a high configuration computer system recommended. 
 - In options 1 and 2, you will get new raw data which pattern might be different from my data as I present in my work. Thus you may get a different final result.
 
 
@@ -195,6 +195,8 @@ Step 2: To get the prediction result, run the following cell in notebook:
 
 Step 1: [Jupyter Notebook followed by anaconda and given instructions](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/dev/anaconda_installation.txt)
 
+**Note:** It is recommended install anaconda in home directory (e.g., /home/HOSTNAME/anaconda3)
+
 ```bash
 - Notebook==6.0.3
 - Numpy==1.18.1
@@ -205,7 +207,6 @@ Step 1: [Jupyter Notebook followed by anaconda and given instructions](https://g
 - Scipy==1.4.1
 ```
 
-**Note:** It is recommended install anaconda in home directory (e.g., /home/HOSTNAME/anaconda3)
 
 Step 2: [Imbalanced-learn- python package](https://anaconda.org/conda-forge/imbalanced-learn)
 
@@ -248,6 +249,17 @@ Step 2: To get the prediction result, run the following cell in notebook:
 
 Wrapped with the packeages that just required for working with pre-proccess exported csv file.
 
+ **To update the existing project git repository** 
+
+Step 1: Open terminal and execute the following command:
+
+```bash
+
+cd  ~/reproducible-research-IA369Z
+
+git pull
+
+```
 * **Data Preprocess** 
 
 Step 1: Open jupyter notebook and open the **third-draft.ipynb** notebook from **~/reproducible-research-IA369Z/deliver/** directory.
@@ -259,7 +271,6 @@ Step 2: To split training and testing csv from exported csv, run the following c
 ```
 
 * **Data Analysis**
-
 
 Step 1: To execute the grid serach and model accuracy program, run the following cell in notebook:
 
