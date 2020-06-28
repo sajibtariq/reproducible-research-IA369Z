@@ -130,7 +130,7 @@ Step 2: To get the prediction result, run the following cell in notebook:
 
 **Fully/Partially reproducible by provided pre-built VM including all dependencies**
 
-[Pre-built VM ](#Distribution) is available in .ova format and should be usable with any modern x64 virtualization system.
+[Pre-built VM ](#Distribution) is available in .ova format and should be usable with [Oracle  VirtualBox 6.1.10](https://www.virtualbox.org/wiki/Downloads)
 
 
 **Note:** If you can download the  VM image and import successfully. But later,  not able to perform Data Generation and Raw data preprocess steps inside VM properly due to any technical problem. Then, skip the Data Generation and Data Preprocess (Raw data to export CSV) steps. You can still partially execute the work by completing  only  Data Preprocess (Split training and testing CSV from exported CSV)  and Data analysis steps with given dataset in  **~/reproducible-research-IA369Z/data/** directory 
@@ -248,6 +248,10 @@ Step 2: To get the prediction result, run the following cell in notebook:
 ### [Pre-built VM:](#Distribution)
 
 Wrapped with the packeages that just required for working with pre-proccess exported csv file.
+
+* **Requirement**
+
+* [Oracle  VirtualBox 6.1.10](https://www.virtualbox.org/wiki/Downloads)
 
 * **To Update the Existing Project git Repository** 
 
