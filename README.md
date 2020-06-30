@@ -8,7 +8,7 @@ Network operators expected to run on with fast growing multimedia video streamin
 - [Executable paper](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/deliver/third-draft.ipynb)
 
 ## Workflow
-![alt text](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/figures/Project%20workflow.jpg?raw=true)
+![alt text](https://github.com/sajibtariq/reproducible-research-IA369Z/blob/master/figures/Project%20workflow.jpeg?raw=true)
 
 ## Requirements
 
