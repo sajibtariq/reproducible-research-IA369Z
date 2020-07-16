@@ -6,6 +6,7 @@ echo "###################################"
 sudo apt-get -y update
 sudo apt-get install -y unzip
 sudo apt-get install -y git
+sudo apt-get install -y wget
 git clone https://github.com/intrig-unicamp/mininet-wifi
 cd mininet-wifi
 sudo util/install.sh -Wlnfv 
